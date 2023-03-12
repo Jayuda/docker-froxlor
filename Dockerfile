@@ -4,7 +4,6 @@ USER root
 
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y apache2
-RUN apt-get install -y libapache2-mod-php7.0
 RUN apt-get install -y php-xml
 RUN apt-get install -y php-mbstring
 RUN apt-get install -y php-curl
@@ -12,6 +11,8 @@ RUN apt-get install -y php-zip
 RUN apt-get install -y php-bcmath
 RUN apt-get install -y php-mysql
 RUN apt-get install -y mysql-client
+RUN apt-get install -y php8.2
+RUN apt-get install -y libapache2-mod-php8.2
 
 COPY froxlor /var/www/html/froxlor
 
