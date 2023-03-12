@@ -10,7 +10,7 @@ RUN apt-get install -y php-curl
 RUN apt-get install -y php-zip
 RUN apt-get install -y php-bcmath
 RUN apt-get install -y php-mysql
-RUN apt-get install -y mysql-client
+RUN apt-get install -y mariadb-client
 RUN apt-get install -y php7.4
 RUN apt-get install -y libapache2-mod-php7.4
 
